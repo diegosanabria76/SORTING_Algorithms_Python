@@ -1,0 +1,8 @@
+def insertion_sort(lista):
+    insdexing_lenght = range(1, len(lista))
+    for i in insdexing_lenght:
+        value_to_sort = lista[i]
+        while lista[i-1] > value_to_sort  and i>0:
+            lista[i], lista[i-1] = lista[i-1], lista[i]
+            i = i-1
+    return lista   
