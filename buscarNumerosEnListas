@@ -15,16 +15,24 @@ def tres_numeros(listadetres):
     else:
         return listadetres
         
-  
 '''Este metodo busca el numero mas grande de una lista, sin importar el tamano de la lista'''
 def largest(lista):
-    big = 0
+    big = lista[0]
     for num in range(len(lista)):
         if lista[num] > big:
             big = lista[num]
             
     return big    
-   
+
+'''Este metodo busca el numero mas pequeno de una lista, sin importar el tamano de la lista'''
+def smallest(lista):
+    smallest = lista[0]
+    for num in range(len(lista)):
+        if lista[num] < smallest:
+            smallest = lista[num]
+            
+    return smallest  
+
         
         
         
