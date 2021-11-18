@@ -1,0 +1,30 @@
+'''
+solo sirve para comparar listas de 3 elementos, en caso de tener mas de tres
+no srive, lo hice porq es un ejercicio basado en otro de codingBat
+'''
+def tres_numeros(listadetres):
+    primero = listadetres[0]
+    medio= listadetres[1]
+    ultimo= listadetres[-1]
+    if primero > medio and primero> ultimo:
+        return primero, primero, primero
+    elif medio>primero and medio >ultimo:
+        return medio, medio, medio
+    elif ultimo>primero and ultimo >medio:
+        return ultimo,ultimo,ultimo
+    else:
+        return listadetres
+        
+  
+'''Este metodo busca el numero mas grande de una lista, sin importar el tamano de la lista'''
+def largest(lista):
+    big = 0
+    for num in range(len(lista)):
+        if lista[num] > big:
+            big = lista[num]
+            
+    return big    
+   
+        
+        
+        
