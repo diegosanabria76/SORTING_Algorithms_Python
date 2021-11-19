@@ -33,6 +33,14 @@ def smallest(lista):
             
     return smallest  
 
+def media(lista):
+    mitad = len(lista)//2
+    if mitad%2==0:
+        media = lista[mitad]
+    elif mitad%2 !=0:
+        media = lista[mitad-1],lista[mitad]
+    
+    print(f"la media es : {media}")
         
         
         
